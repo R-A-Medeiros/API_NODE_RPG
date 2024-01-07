@@ -1,4 +1,3 @@
-import { Int32 } from "mongodb";
 import mongoose from "mongoose";
 
 const fichaSchema = new mongoose.Schema({
@@ -7,7 +6,7 @@ const fichaSchema = new mongoose.Schema({
     raca: {type: String, required: true},
     jogador: {type: String, required: true},
     pv: {type: Number, required: true},
-    equipamentos: {type: Object},
+    equipamentos: {type: Array},
     pericias: {type: Array}
 }, {versionKey: false});
 
